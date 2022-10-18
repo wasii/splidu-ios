@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SelectMonthCollectionCell" customModule="Splidu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="130" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="130" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DJ4-Rp-tU2">
+                        <rect key="frame" x="15" y="5" width="100" height="40"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JANUARY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sqz-g5-Oxx">
+                                <rect key="frame" x="5" y="12.5" width="90" height="15.5"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="underlineColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="WdM-dU-INV"/>
+                            <constraint firstItem="Sqz-g5-Oxx" firstAttribute="centerY" secondItem="DJ4-Rp-tU2" secondAttribute="centerY" id="XIm-aY-YVK"/>
+                            <constraint firstAttribute="trailing" secondItem="Sqz-g5-Oxx" secondAttribute="trailing" constant="5" id="bHI-dL-9fu"/>
+                            <constraint firstItem="Sqz-g5-Oxx" firstAttribute="leading" secondItem="DJ4-Rp-tU2" secondAttribute="leading" constant="5" id="ieC-Cs-RfM"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="ibcornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" name="customPink"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="DJ4-Rp-tU2" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="88g-tZ-pST"/>
+                <constraint firstAttribute="bottom" secondItem="DJ4-Rp-tU2" secondAttribute="bottom" constant="5" id="9jk-Az-XWI"/>
+                <constraint firstItem="DJ4-Rp-tU2" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="PBC-VL-dIW"/>
+            </constraints>
+            <size key="customSize" width="130" height="50"/>
+            <connections>
+                <outlet property="backView" destination="DJ4-Rp-tU2" id="J0d-Kh-DXG"/>
+                <outlet property="monthLabel" destination="Sqz-g5-Oxx" id="CzL-Lt-UZP"/>
+            </connections>
+            <point key="canvasLocation" x="189.85507246376812" y="77.678571428571431"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="customPink">
+            <color red="1" green="0.031372549019607843" blue="0.78823529411764703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="underlineColor">
+            <color red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

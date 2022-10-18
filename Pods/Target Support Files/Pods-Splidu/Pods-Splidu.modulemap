@@ -1,0 +1,6 @@
+framework module Pods_Splidu {
+  umbrella header "Pods-Splidu-umbrella.h"
+
+  export *
+  module * { export * }
+}

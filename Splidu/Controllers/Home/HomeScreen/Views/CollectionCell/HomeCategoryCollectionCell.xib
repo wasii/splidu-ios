@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-Regular.ttf">
+            <string>Nunito-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HomeCategoryCollectionCell" customModule="Splidu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="101" height="105"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="101" height="105"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="slz-xI-3xu">
+                        <rect key="frame" x="17" y="5" width="67" height="67"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="underground-dining" translatesAutoresizingMaskIntoConstraints="NO" id="feo-Qv-TT0">
+                                <rect key="frame" x="12" y="21.5" width="43" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="ZJn-SL-lP9"/>
+                                    <constraint firstAttribute="width" constant="43" id="eoE-YR-jdr"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="67" id="1an-CC-lwO"/>
+                            <constraint firstAttribute="width" secondItem="slz-xI-3xu" secondAttribute="height" id="8lb-4B-mei"/>
+                            <constraint firstItem="feo-Qv-TT0" firstAttribute="centerX" secondItem="slz-xI-3xu" secondAttribute="centerX" id="MIB-Iw-hu8"/>
+                            <constraint firstItem="feo-Qv-TT0" firstAttribute="centerY" secondItem="slz-xI-3xu" secondAttribute="centerY" id="api-Bb-9MD"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="ibcornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="addBezierShadow" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="addNormalShadow" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Underground Dining" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3R5-Le-H09">
+                        <rect key="frame" x="8" y="77" width="85" height="27.5"/>
+                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="10"/>
+                        <color key="textColor" name="darkGray"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="3R5-Le-H09" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="9C5-f2-DoP"/>
+                <constraint firstItem="slz-xI-3xu" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="MKD-Th-eiP"/>
+                <constraint firstItem="3R5-Le-H09" firstAttribute="top" secondItem="slz-xI-3xu" secondAttribute="bottom" constant="5" id="RBM-mO-gbv"/>
+                <constraint firstItem="slz-xI-3xu" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Rba-h9-fO7"/>
+                <constraint firstAttribute="trailing" secondItem="3R5-Le-H09" secondAttribute="trailing" constant="8" id="iyD-5D-OMN"/>
+            </constraints>
+            <size key="customSize" width="101" height="109"/>
+            <connections>
+                <outlet property="categoryImage" destination="feo-Qv-TT0" id="t2n-a3-r1f"/>
+                <outlet property="categoryTitle" destination="3R5-Le-H09" id="66F-BD-PiY"/>
+            </connections>
+            <point key="canvasLocation" x="174.63768115942031" y="97.433035714285708"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="underground-dining" width="42.5" height="24"/>
+        <namedColor name="darkGray">
+            <color red="0.12549019607843137" green="0.12549019607843137" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

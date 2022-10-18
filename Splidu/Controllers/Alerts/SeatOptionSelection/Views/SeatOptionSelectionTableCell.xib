@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="KGk-i7-Jjw" customClass="SeatOptionSelectionTableCell" customModule="Splidu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="srM-ue-KzD">
+                        <rect key="frame" x="5" y="5" width="310" height="50"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradientBottom" translatesAutoresizingMaskIntoConstraints="NO" id="eAS-aL-8QS">
+                                <rect key="frame" x="0.0" y="0.0" width="310" height="50"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ibcornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XUg-Ua-r4a">
+                                <rect key="frame" x="1.5" y="0.0" width="307" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book the available seats and put the rest on the waitlist" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vRd-62-jIY">
+                                        <rect key="frame" x="20" y="4" width="267" height="42"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
+                                        <color key="textColor" systemColor="tertiarySystemBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="childViewColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="vRd-62-jIY" secondAttribute="trailing" constant="20" id="XgF-uj-xmB"/>
+                                    <constraint firstItem="vRd-62-jIY" firstAttribute="leading" secondItem="XUg-Ua-r4a" secondAttribute="leading" constant="20" id="cCh-Dy-CFT"/>
+                                    <constraint firstItem="vRd-62-jIY" firstAttribute="centerY" secondItem="XUg-Ua-r4a" secondAttribute="centerY" id="zKA-7F-6SQ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ibcornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XUg-Ua-r4a" firstAttribute="leading" secondItem="srM-ue-KzD" secondAttribute="leading" constant="1.5" id="2Zg-pI-NvG"/>
+                            <constraint firstAttribute="trailing" secondItem="XUg-Ua-r4a" secondAttribute="trailing" constant="1.5" id="5l0-wm-QM7"/>
+                            <constraint firstItem="XUg-Ua-r4a" firstAttribute="top" secondItem="srM-ue-KzD" secondAttribute="top" id="8c1-uK-4Fh"/>
+                            <constraint firstItem="eAS-aL-8QS" firstAttribute="top" secondItem="srM-ue-KzD" secondAttribute="top" id="Dp0-Ci-qGF"/>
+                            <constraint firstAttribute="bottom" secondItem="eAS-aL-8QS" secondAttribute="bottom" id="Lw0-u2-C3K"/>
+                            <constraint firstItem="eAS-aL-8QS" firstAttribute="leading" secondItem="srM-ue-KzD" secondAttribute="leading" id="SyY-Sg-WTs"/>
+                            <constraint firstAttribute="trailing" secondItem="eAS-aL-8QS" secondAttribute="trailing" id="T9F-zM-D9e"/>
+                            <constraint firstAttribute="bottom" secondItem="XUg-Ua-r4a" secondAttribute="bottom" id="xP2-5u-cfM"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="srM-ue-KzD" secondAttribute="bottom" constant="5" id="OYo-wy-ihy"/>
+                    <constraint firstAttribute="trailing" secondItem="srM-ue-KzD" secondAttribute="trailing" constant="5" id="XDc-IQ-erl"/>
+                    <constraint firstItem="srM-ue-KzD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="noF-Kv-DX6"/>
+                    <constraint firstItem="srM-ue-KzD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="rx8-q8-WF3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="optionLabel" destination="vRd-62-jIY" id="RE2-z6-j8r"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="93.415178571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="gradientBottom" width="46" height="44"/>
+        <namedColor name="childViewColor">
+            <color red="0.15686274509803921" green="0.16078431372549021" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-Regular.ttf">
+            <string>Nunito-Regular</string>
+        </array>
+        <array key="Nunito-SemiBold.ttf">
+            <string>Nunito-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="103" id="KGk-i7-Jjw" customClass="NotificationTableCell" customModule="Splidu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="103"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="103"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hgu-f5-zho">
+                        <rect key="frame" x="5" y="5" width="310" height="93"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradientBottom" translatesAutoresizingMaskIntoConstraints="NO" id="V9c-Xi-0Fd">
+                                <rect key="frame" x="0.0" y="0.0" width="310" height="93"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ibcornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eX7-l1-LmN">
+                                <rect key="frame" x="1" y="0.0" width="308" height="93"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RE01652455451" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K57-QQ-Nqo">
+                                        <rect key="frame" x="10" y="10" width="260" height="22"/>
+                                        <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your order placed successfully. for more information please check the request..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="duj-Uo-Rcu">
+                                        <rect key="frame" x="10" y="32" width="258" height="30.5"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="11"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 hours ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v7N-oK-u39">
+                                        <rect key="frame" x="234" y="66.5" width="64" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="12"/>
+                                        <color key="textColor" name="customPink"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XNi-Uu-b9i">
+                                        <rect key="frame" x="280" y="10" width="18" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="18" id="bKm-Xh-f4b"/>
+                                            <constraint firstAttribute="height" constant="22" id="u4n-HG-oEQ"/>
+                                        </constraints>
+                                        <color key="tintColor" name="customPink"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="xmark" catalog="system">
+                                            <color key="titleColor" name="customPink"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="v7N-oK-u39" secondAttribute="bottom" constant="10" id="21Y-IM-XFB"/>
+                                    <constraint firstAttribute="trailing" secondItem="v7N-oK-u39" secondAttribute="trailing" constant="10" id="2B9-r7-niv"/>
+                                    <constraint firstAttribute="trailing" secondItem="duj-Uo-Rcu" secondAttribute="trailing" constant="40" id="2Tw-Un-wZD"/>
+                                    <constraint firstItem="K57-QQ-Nqo" firstAttribute="top" secondItem="eX7-l1-LmN" secondAttribute="top" constant="10" id="4Wb-5P-Xvi"/>
+                                    <constraint firstItem="XNi-Uu-b9i" firstAttribute="leading" secondItem="K57-QQ-Nqo" secondAttribute="trailing" constant="10" id="Yx8-Vg-o03"/>
+                                    <constraint firstItem="XNi-Uu-b9i" firstAttribute="top" secondItem="eX7-l1-LmN" secondAttribute="top" constant="10" id="hOm-TQ-fcp"/>
+                                    <constraint firstItem="duj-Uo-Rcu" firstAttribute="top" secondItem="K57-QQ-Nqo" secondAttribute="bottom" id="jWa-hC-jkd"/>
+                                    <constraint firstItem="duj-Uo-Rcu" firstAttribute="leading" secondItem="eX7-l1-LmN" secondAttribute="leading" constant="10" id="nci-62-LMM"/>
+                                    <constraint firstAttribute="trailing" secondItem="XNi-Uu-b9i" secondAttribute="trailing" constant="10" id="pa9-Ke-g3b"/>
+                                    <constraint firstItem="K57-QQ-Nqo" firstAttribute="leading" secondItem="eX7-l1-LmN" secondAttribute="leading" constant="10" id="qhF-2P-6i6"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ibcornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eX7-l1-LmN" firstAttribute="leading" secondItem="hgu-f5-zho" secondAttribute="leading" constant="1" id="04T-Gd-jgx"/>
+                            <constraint firstAttribute="bottom" secondItem="eX7-l1-LmN" secondAttribute="bottom" id="3hN-g9-KeY"/>
+                            <constraint firstAttribute="bottom" secondItem="V9c-Xi-0Fd" secondAttribute="bottom" id="Ce1-7b-0gV"/>
+                            <constraint firstAttribute="trailing" secondItem="eX7-l1-LmN" secondAttribute="trailing" constant="1" id="K1l-6f-6kB"/>
+                            <constraint firstItem="V9c-Xi-0Fd" firstAttribute="leading" secondItem="hgu-f5-zho" secondAttribute="leading" id="bW1-dK-b5A"/>
+                            <constraint firstItem="V9c-Xi-0Fd" firstAttribute="top" secondItem="hgu-f5-zho" secondAttribute="top" id="bpv-qK-7kr"/>
+                            <constraint firstAttribute="trailing" secondItem="V9c-Xi-0Fd" secondAttribute="trailing" id="pmr-Kb-czY"/>
+                            <constraint firstItem="eX7-l1-LmN" firstAttribute="top" secondItem="hgu-f5-zho" secondAttribute="top" id="yDf-VR-c7c"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="ibcornerRadius">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="addNormalShadow" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="hgu-f5-zho" secondAttribute="trailing" constant="5" id="NVT-j2-NTU"/>
+                    <constraint firstAttribute="bottom" secondItem="hgu-f5-zho" secondAttribute="bottom" constant="5" id="YfD-9f-8dA"/>
+                    <constraint firstItem="hgu-f5-zho" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="a8C-gm-9JJ"/>
+                    <constraint firstItem="hgu-f5-zho" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="s5d-Vn-NH0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <point key="canvasLocation" x="131.8840579710145" y="104.12946428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="gradientBottom" width="46" height="44"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+        <namedColor name="customPink">
+            <color red="1" green="0.031372549019607843" blue="0.78823529411764703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

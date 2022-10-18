@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-SemiBold.ttf">
+            <string>Nunito-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="74" id="KGk-i7-Jjw" customClass="FAQsSeactionTableCell" customModule="Splidu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pellentesque iaculis velit sit amet ligula eleifend ultricies ?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZD-fK-uqt">
+                        <rect key="frame" x="10" y="10" width="273" height="38.5"/>
+                        <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow-dropdown" translatesAutoresizingMaskIntoConstraints="NO" id="Z1B-9W-94K">
+                        <rect key="frame" x="293" y="24.5" width="17" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="V4R-Hg-21b"/>
+                            <constraint firstAttribute="width" constant="17" id="jVw-tj-q3u"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8zL-wo-24o">
+                        <rect key="frame" x="0.0" y="73" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="m8s-Zb-lkm"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="8zL-wo-24o" secondAttribute="trailing" id="0Xc-co-Mza"/>
+                    <constraint firstItem="Z1B-9W-94K" firstAttribute="centerY" secondItem="mZD-fK-uqt" secondAttribute="centerY" id="2fV-F2-xHL"/>
+                    <constraint firstAttribute="bottom" secondItem="8zL-wo-24o" secondAttribute="bottom" id="IpH-Yg-Ciz"/>
+                    <constraint firstItem="8zL-wo-24o" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="KOf-dD-arA"/>
+                    <constraint firstItem="mZD-fK-uqt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="WvQ-hg-qmv"/>
+                    <constraint firstAttribute="trailing" secondItem="Z1B-9W-94K" secondAttribute="trailing" constant="10" id="ePp-CV-He0"/>
+                    <constraint firstItem="mZD-fK-uqt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="fkE-Xc-Iu5"/>
+                    <constraint firstItem="Z1B-9W-94K" firstAttribute="leading" secondItem="mZD-fK-uqt" secondAttribute="trailing" constant="10" id="k8b-Va-lcl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="dropDown" destination="Z1B-9W-94K" id="vJb-PB-kg1"/>
+                <outlet property="sectionLabel" destination="mZD-fK-uqt" id="oh4-fE-fyg"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="89.732142857142847"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow-dropdown" width="16.5" height="10"/>
+    </resources>
+</document>

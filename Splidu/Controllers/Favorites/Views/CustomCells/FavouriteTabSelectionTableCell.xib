@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-SemiBold.ttf">
+            <string>Nunito-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="FavouriteTabSelectionTableCell" customModule="Splidu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kmo-yA-BiI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradientBottom" translatesAutoresizingMaskIntoConstraints="NO" id="47P-3D-Vkl">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ibcornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IYH-pX-ijN">
+                                <rect key="frame" x="1" y="1" width="318" height="42"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHEF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l3v-3t-pEF">
+                                        <rect key="frame" x="139.5" y="11" width="39" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="15"/>
+                                        <color key="textColor" name="darkTeal"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="l3v-3t-pEF" firstAttribute="centerY" secondItem="IYH-pX-ijN" secondAttribute="centerY" id="ic2-kL-TIX"/>
+                                    <constraint firstItem="l3v-3t-pEF" firstAttribute="centerX" secondItem="IYH-pX-ijN" secondAttribute="centerX" id="nca-WQ-QwU"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ibcornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="47P-3D-Vkl" secondAttribute="bottom" id="9fc-oI-KH6"/>
+                            <constraint firstAttribute="trailing" secondItem="47P-3D-Vkl" secondAttribute="trailing" id="QgU-PF-ewm"/>
+                            <constraint firstAttribute="bottom" secondItem="IYH-pX-ijN" secondAttribute="bottom" constant="1" id="YfN-ra-c4Q"/>
+                            <constraint firstItem="IYH-pX-ijN" firstAttribute="leading" secondItem="Kmo-yA-BiI" secondAttribute="leading" constant="1" id="aY9-Be-OOR"/>
+                            <constraint firstItem="IYH-pX-ijN" firstAttribute="top" secondItem="Kmo-yA-BiI" secondAttribute="top" constant="1" id="fr7-rI-E1s"/>
+                            <constraint firstItem="47P-3D-Vkl" firstAttribute="top" secondItem="Kmo-yA-BiI" secondAttribute="top" id="ubb-R9-hcg"/>
+                            <constraint firstAttribute="trailing" secondItem="IYH-pX-ijN" secondAttribute="trailing" constant="1" id="x2m-fR-rfZ"/>
+                            <constraint firstItem="47P-3D-Vkl" firstAttribute="leading" secondItem="Kmo-yA-BiI" secondAttribute="leading" id="xoa-MX-Le9"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="ibcornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Kmo-yA-BiI" secondAttribute="bottom" id="6LA-yk-ZGa"/>
+                    <constraint firstItem="Kmo-yA-BiI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="F5T-nF-sz8"/>
+                    <constraint firstItem="Kmo-yA-BiI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="OAm-gz-7MT"/>
+                    <constraint firstAttribute="trailing" secondItem="Kmo-yA-BiI" secondAttribute="trailing" id="Qpk-xh-0wx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="optionLabel" destination="l3v-3t-pEF" id="evU-i4-X0Q"/>
+            </connections>
+            <point key="canvasLocation" x="133" y="74"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="gradientBottom" width="46" height="44"/>
+        <namedColor name="darkTeal">
+            <color red="0.36078431372549019" green="0.4823529411764706" blue="0.5725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Bold.ttf">
+            <string>Poppins-Bold</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HomeHeaderCollectionCell" customModule="Splidu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="342" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="342" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZGH-zn-uUH">
+                        <rect key="frame" x="8" y="8" width="326" height="184"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 17627" translatesAutoresizingMaskIntoConstraints="NO" id="grr-3p-JZr">
+                                <rect key="frame" x="0.0" y="114" width="326" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Elz-Ho-KLM"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ibcornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EUa-LL-8c8">
+                                <rect key="frame" x="0.0" y="0.0" width="326" height="184"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ibcornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sle-dN-YLZ">
+                                <rect key="frame" x="15" y="65.5" width="200" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="EEE-S2-lO6"/>
+                                </constraints>
+                                <string key="text">Explore With
+Splidu</string>
+                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our job is to filling your tummy with delicious food &amp; fast delivery" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOp-Da-Ro8">
+                                <rect key="frame" x="15" y="127.5" width="296" height="36.5"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="hOp-Da-Ro8" secondAttribute="bottom" constant="20" id="06X-rP-pYf"/>
+                            <constraint firstAttribute="trailing" secondItem="EUa-LL-8c8" secondAttribute="trailing" id="1mV-bc-oPe"/>
+                            <constraint firstAttribute="bottom" secondItem="grr-3p-JZr" secondAttribute="bottom" id="44e-Ga-Amw"/>
+                            <constraint firstItem="Sle-dN-YLZ" firstAttribute="leading" secondItem="ZGH-zn-uUH" secondAttribute="leading" constant="15" id="82b-oc-2d6"/>
+                            <constraint firstItem="grr-3p-JZr" firstAttribute="leading" secondItem="ZGH-zn-uUH" secondAttribute="leading" id="HZQ-9y-hk3"/>
+                            <constraint firstAttribute="bottom" secondItem="EUa-LL-8c8" secondAttribute="bottom" id="KgS-GW-216"/>
+                            <constraint firstItem="EUa-LL-8c8" firstAttribute="top" secondItem="ZGH-zn-uUH" secondAttribute="top" id="OiL-mg-NAq"/>
+                            <constraint firstAttribute="trailing" secondItem="hOp-Da-Ro8" secondAttribute="trailing" constant="15" id="Ql7-kz-v2V"/>
+                            <constraint firstAttribute="trailing" secondItem="grr-3p-JZr" secondAttribute="trailing" id="T6K-HI-CVh"/>
+                            <constraint firstItem="hOp-Da-Ro8" firstAttribute="top" secondItem="Sle-dN-YLZ" secondAttribute="bottom" id="XdG-FA-dD7"/>
+                            <constraint firstItem="hOp-Da-Ro8" firstAttribute="leading" secondItem="ZGH-zn-uUH" secondAttribute="leading" constant="15" id="hDE-AH-cAF"/>
+                            <constraint firstItem="EUa-LL-8c8" firstAttribute="leading" secondItem="ZGH-zn-uUH" secondAttribute="leading" id="k8Y-BW-ZmN"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="ibcornerRadius">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="addNormalShadow" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="ZGH-zn-uUH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="Cdk-jr-mbV"/>
+                <constraint firstAttribute="bottom" secondItem="ZGH-zn-uUH" secondAttribute="bottom" constant="8" id="nyK-9z-kDk"/>
+                <constraint firstAttribute="trailing" secondItem="ZGH-zn-uUH" secondAttribute="trailing" constant="8" id="oLA-A9-hQx"/>
+                <constraint firstItem="ZGH-zn-uUH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="tou-s4-Rth"/>
+            </constraints>
+            <size key="customSize" width="342" height="202"/>
+            <connections>
+                <outlet property="descLbl" destination="hOp-Da-Ro8" id="2eH-db-Gpm"/>
+                <outlet property="headerImage" destination="EUa-LL-8c8" id="cjk-Om-zaY"/>
+                <outlet property="titleLbl" destination="Sle-dN-YLZ" id="FVk-gI-Vid"/>
+            </connections>
+            <point key="canvasLocation" x="349.27536231884062" y="127.90178571428571"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Rectangle 17627" width="342" height="179"/>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_Splidu_SpliduUITests {
+  umbrella header "Pods-Splidu-SpliduUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
